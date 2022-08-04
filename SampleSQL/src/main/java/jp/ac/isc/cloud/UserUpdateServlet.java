@@ -25,7 +25,7 @@ public class UserUpdateServlet extends HttpServlet {
 		
 		Connection users = null;
 		try {
-			request.setCharacterEncoding("utf-8");
+			//request.setCharacterEncoding("utf-8");
 			users = DBConnection.openConnection();
 			String id = request.getParameter("updateId");
 			String name = request.getParameter("updateName");

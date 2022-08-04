@@ -28,7 +28,7 @@ public class UserInsertServlet extends HttpServlet {
 		Connection users = null;
 		
 		try {
-			request.setCharacterEncoding("utf-8");
+			//request.setCharacterEncoding("utf-8");
 			users = DBConnection.openConnection();
 			String id = request.getParameter("insertId");
 			String name = request.getParameter("insertName");
